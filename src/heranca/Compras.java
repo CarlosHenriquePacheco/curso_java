@@ -20,7 +20,7 @@ public class Compras implements Comparable<Compras>{
     }
     @Override
     public int compareTo(Compras pCompra) {
-        return this.getDesCompra().compareTo(pCompra.getDesCompra());
+        return this.getDesCompra().compareTo(pCompra.getDesCompra());  
     }
 
    
