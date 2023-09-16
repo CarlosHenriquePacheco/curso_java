@@ -4,6 +4,10 @@ public class Compras implements Comparable<Compras>{
     private String desCompra;
     private double precoCompra;
 
+     public Compras(String pDesCompra,double pPrecoCompra){
+        this.desCompra = pDesCompra;
+        this.precoCompra = pPrecoCompra;
+     }
 
     //Implementar Getters and Setters
     public String getDesCompra(){
@@ -18,10 +22,15 @@ public class Compras implements Comparable<Compras>{
     public void setPrecoCompra(double pPrecoCommpra){
         this.precoCompra = pPrecoCommpra;
     }
+
     @Override
     public int compareTo(Compras pCompra) {
-        return this.getDesCompra().compareTo(pCompra.getDesCompra());  
+        return Double.valueOf(this.precoCompra).compareTo(Double.valueOf(pCompra.precoCompra));
     }
 
+    @Override
+    public String toString() {
+        return "Produto: "+this.desCompra + "Preco: " + this.precoCompra;
+    } 
    
 }
