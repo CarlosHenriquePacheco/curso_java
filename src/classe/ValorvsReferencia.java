@@ -1,7 +1,7 @@
 package classe;
 
 public class ValorvsReferencia {
-    
+
     public static void main(String[] args) {
         double a = 2;
         double b = a; //Atribuição por valor
@@ -17,7 +17,7 @@ public class ValorvsReferencia {
 
         System.out.println("Dia 1: "+d1.obterDataFormatada());
         System.out.println("Dia 2: "+d2.obterDataFormatada());
-  
+        
     }
    
 }
