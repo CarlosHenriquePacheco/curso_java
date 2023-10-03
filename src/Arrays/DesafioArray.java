@@ -19,6 +19,8 @@ public class DesafioArray {
                 vNotas[i][j] = Double.parseDouble(entrada.nextLine());    
             }
         }
+        double vtotalGeral = 0.0;
+        double vMediaGeral = 0.0;
         double total = 0.0;
         double media = 0.0;
         for (int i = 0; i < vQtdAlunos; i++) {
@@ -29,9 +31,12 @@ public class DesafioArray {
             System.out.println("Array:"+Arrays.toString(vNotas[i]));
             System.out.printf("Media : %.2f",media);
             System.out.println();
+            vtotalGeral = vtotalGeral + total;
             total = 0.0;
             media = 0.0;
         }
+        vMediaGeral = vtotalGeral/(vQtdAlunos*vQtdNotas);
+       System.out.printf("Media Geral da Turma: %.2f",vMediaGeral);
         entrada.close();
         
     }
