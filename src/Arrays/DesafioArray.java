@@ -2,6 +2,8 @@ package arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.Level;
+
 
 public class DesafioArray {
     public static void main(String[] args) {
@@ -36,7 +38,7 @@ public class DesafioArray {
             media = 0.0;
         }
         vMediaGeral = vtotalGeral/(vQtdAlunos*vQtdNotas);
-       System.out.printf("Media Geral da Turma: %.2f",vMediaGeral);
+        System.out.printf("Media Geral da Turma: %.2f",vMediaGeral);
         entrada.close();
         
     }
