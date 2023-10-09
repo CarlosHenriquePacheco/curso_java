@@ -1,7 +1,16 @@
 package oo.composicao;
 
 public class Motor {
-    public static void main(String[] args) {
-        System.out.println("Teste");
+    boolean ligado = false;
+    double fatorInjecao = 1;
+
+    int giros(){
+        if (!ligado) {
+            return 0;
+            } else{
+                return (int) Math.round(fatorInjecao*3000);
+            }
+        
+        
     }
 }
