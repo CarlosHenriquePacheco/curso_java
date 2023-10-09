@@ -1,4 +1,4 @@
-package oo.composicao;
+package oo_composicao;
 
 public class Motor {
     boolean ligado = false;
