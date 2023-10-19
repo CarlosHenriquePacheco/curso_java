@@ -2,7 +2,7 @@ package classe;
 
 import java.util.Date;
 
-public class Equals {
+public class EqualsTeste {
     public static void main(String[] args) {
         Usuario u1 = new Usuario();
         u1.setNome("Carlos Henrique");
