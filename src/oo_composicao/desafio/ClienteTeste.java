@@ -48,7 +48,7 @@ public class ClienteTeste {
         compras.add(c2);
 
         //Criação do Cliente
-        Cliente cliente = new Cliente();
+        Cliente cliente = new Cliente("Carlos Henrique");
         cliente.setListaCompras(compras);
 
         //Mostrar o valor de todas as compras do cliente
