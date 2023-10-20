@@ -21,6 +21,7 @@ public class Cliente {
     public Cliente(String pNomeCliente){
         this.nome = pNomeCliente;
     }
+   
 
     public void setListaCompras(ArrayList<CompraItens> listaCompras) {
         this.listaCompras = listaCompras;
