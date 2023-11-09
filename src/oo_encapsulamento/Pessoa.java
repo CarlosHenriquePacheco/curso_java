@@ -11,7 +11,9 @@ public class Pessoa {
         return idade;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setIdade(int pIdade) {
+        if (pIdade>=0) {
+            this.idade = pIdade;    
+        }
     }
 }
