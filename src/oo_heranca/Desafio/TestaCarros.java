@@ -11,14 +11,16 @@ public class TestaCarros {
         c1.mostrarVelocidadeAtual();
         c2.mostrarVelocidadeAtual();
         f1.mostrarVelocidadeAtual();
+        //f1.ligarTurbo();
 
         //Acelerar cada carro 3 vezes
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 5; i++) {
             c1.acelerar();
             c2.acelerar();
             f1.acelerar();
         }
-        for (int i = 0; i < 20; i++) {
+        f1.desligarTurbo();
+        for (int i = 0; i < 3; i++) {
             c1.frear();
             c2.frear();
             f1.frear();

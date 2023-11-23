@@ -3,13 +3,25 @@ package oo_heranca.Desafio;
 public class Carro {
     private double velocidadeAtual;
     private final double VELOCIDADEMAXIMA;
+    private int delta = 5;
 
     //Construtor
+    public Carro(){
+        this(160);
+    }
     public Carro(double pVelocidadeMaxima){
         this.VELOCIDADEMAXIMA = pVelocidadeMaxima;
+        delta = 9;
     }
 
     //Getters and Setters
+    public int getDelta() {
+        return delta;
+    }
+
+    public void setDelta(int delta) {
+        this.delta = delta;
+    }
     public double getVelocidadeMaxima() {
         return VELOCIDADEMAXIMA;
     }
@@ -24,7 +36,7 @@ public class Carro {
 
     public void acelerar(){
         if (velocidadeAtual<VELOCIDADEMAXIMA) {
-                velocidadeAtual = velocidadeAtual +5;
+                velocidadeAtual = velocidadeAtual +getDelta();
                 if (velocidadeAtual>VELOCIDADEMAXIMA) {
                     velocidadeAtual = VELOCIDADEMAXIMA;
                 }
@@ -35,7 +47,7 @@ public class Carro {
         
 
     public void frear(){
-        velocidadeAtual = velocidadeAtual -5;
+        velocidadeAtual = velocidadeAtual -getDelta();
         if (velocidadeAtual<0) {
             velocidadeAtual = 0;
         }
