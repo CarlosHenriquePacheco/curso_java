@@ -4,6 +4,13 @@ public class Item {
     private int qtd;
     private Produto produto;
 
+    public Item(int qtd, Produto produto) {
+        this.qtd = qtd;
+        this.produto = produto;
+    }
+    public Item() {
+        
+    }
     //Getters and Setters
     public int getQtd() {
         return qtd;
