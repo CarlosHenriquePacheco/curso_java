@@ -1,12 +1,19 @@
 package lambdas;
 
+import java.util.function.BinaryOperator;
+
 public class CalculoTeste {
     public static void main(String[] args) {
-        Calculo calculo = new Somar();
-        System.out.println(calculo.executar(2, 3));
-        Calculo multiplicacao = new Multiplicar();
 
-        calculo = new Multiplicar();
-        System.out.println(calculo.executar(2, 3));
+        BinaryOperator<Double> calc = (x,y) -> {return x+y;};
+        System.out.println(calc.apply(2.0, 30.0));
+        calc = (x,y) -> x * y;
+        System.out.println(calc.apply(2.0, 30.0));
+
+        BinaryOperator<Integer> calc2 = (x,y) -> {return x+y;};
+        System.out.println(calc2.apply(2, 30));
+        calc2 = (x,y) -> x * y;
+        System.out.println(calc2.apply(2, 30));
+
     }
 }
