@@ -26,7 +26,7 @@ public class Funcao {
         String resultadoFinal2 = parOuImpar.
                 andThen(oResultadoe)
                 .andThen(comDuvida)
-                .apply(32);
+                .apply(33);
         System.out.println(resultadoFinal2);
 
     }
