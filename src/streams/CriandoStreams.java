@@ -14,11 +14,14 @@ public class CriandoStreams {
 
         String[] maislangs = {"Pyton ","Lisp ","Perl ","Go\n"};
         Stream.of(maislangs).forEach(print);
+
         Arrays.stream(maislangs).forEach(print);
-        Arrays.stream(maislangs,1,3).forEach(print);
+        Arrays.stream(maislangs,0,3).forEach(print);
         System.out.println(" ");
+        
         List<String> outraslangs = Arrays.asList("C ","PHP ","Kotlin");
         outraslangs.stream().forEach(print);
+        System.out.println(" ");
         outraslangs.parallelStream().forEach(print);
     }
 }
